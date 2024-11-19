@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Food Subscription Plans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #6ab04c;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .plan {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .plan h2 {
+      color: #333;
+    }
+
+    .plan p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .button {
+      background-color: #6ab04c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #c2c765;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Healthy Food Subscription Plans</h1>
+  </header>
+
+  <div class="container">
+    <div class="plan">
+        <img src="basicplan.webp" alt="Basic Plan Image" width="300" height="200">
+      <h2>Basic Plan</h2>
+      <p>Includes a breakfast health mix.</p>
+      <div class="price">$20 / week</div>
+      <button class="button" onclick="checkout('Basic Plan', 20)">Choose Basic Plan</button>
+    </div>
+    <div class="plan">
+      <img src="Advandage.webp" alt="Advantage Plan Image" width="300" height="200">
+      <h2>Advantage Plan</h2>
+      <p>Includes everything in the Basic plan plus protein biscuits and free delivery.</p>
+      <div class="price">$30 / week</div>
+      <button class="button" onclick="checkout('Advantage Plan', 30)">Choose Advantage Plan</button>
+    </div>
+
+    <div class="plan">
+      <img src="Amaze.jpeg" alt="Amaze Plan Image" width="300" height="200">
+      <h2>Amaze Plan</h2>
+      <p>Includes everything in the Advantage plan, adds a GYM membership, and phone support.</p>
+      <div class="price">$40 / week</div>
+      <button class="button" onclick="checkout('Amaze Plan', 40)">Choose Amaze Plan</button>
+    </div>
+  </div>
+  <script>
+    function checkout(planName, price) {
+      alert('You have chosen the ' + planName + ' for $' + price + ' per week.');
+      // Replace the alert with the checkout function (e.g., redirect to payment gateway)
+    }
+  </script>
+
+</body>
+</html>
